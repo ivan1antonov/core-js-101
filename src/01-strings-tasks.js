@@ -203,8 +203,8 @@ function extractEmails(str) {
  *
  */
 function getRectangleString(width, height) {
-  const midline = ''.repeat(width - 2);
-  const edge = '-'.repeat(width - 2);
+  const midline = ' '.repeat(width - 2);
+  const edge = '─'.repeat(width - 2);
   let border = `┌${edge}┐\n`;
   for (let i = 0; i < height - 2; i++){
     border += `|${midline}|\n`;
